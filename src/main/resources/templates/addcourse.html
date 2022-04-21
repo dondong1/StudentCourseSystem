@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="ISO-8859-1">
-    <title>Insert title here</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
-    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
-</head>
+
+<head th:replace="common/header :: header"/>
+
 <body>
+<div th:replace="common/header :: navbar"/>
 <div align="center">
     <h1>Create New Course</h1>
     <br />
@@ -44,4 +42,5 @@
     </div>
 </div>
 </body>
+<footer th:replace="common/footer :: footer"/>
 </html>

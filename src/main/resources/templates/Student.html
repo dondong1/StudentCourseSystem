@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head th:replace="common/header :: header"/>
 
@@ -7,42 +7,43 @@
 <div th:replace="common/header :: navbar"/>
 
 <div>
-    <h2 >Spring Boot Student Management System</h2>
+    <h2 >Student Registation</h2>
     <tr>
         <div align = "left" >
-            <h3><a  th:href="@{'/Course/addcourse'}">Add new</a>
+            <h3><a  th:href="@{'/Student/addstudent'}">Add new</a></h3>
         </div>
     </tr>
 
     <div class="col-sm-8" align = "center">
         <div class="panel-body" align = "center" >
 
-
             <table class="table">
                 <thead class="thead-dark">
                 <tr>
-                    <th>Course ID</th>
+                    <th>Student ID</th>
+                    <th>Student Name</th>
                     <th>Course Name</th>
-                    <th>Duration</th>
                     <th>edit</th>
                     <th>delete</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr  th:each="course : ${listcourse}">
-                    <td th:text="${course.id}">Course ID</td>
-                    <td th:text="${course.coursename}">Course Name</td>
-                    <td th:text="${course.duration}">Duration</td>
 
+                <tbody>
+
+                <tr th:each="student : ${liststudent}">
+                    <td th:text="${student.id}">Student ID</td>
+                    <td th:text="${student.stname}">Student Name</td>
+                    <td th:text="${student.coursename}">Course</td>
                     <td>
-                        <a th:href="@{'/Course/edit/' + ${course.id}}">Edit</a>
+                        <a th:href="@{'/Student/edit/' + ${student.id}}">Edit</a>
                     </td>
                     <td>
-                        <a th:href="@{'/Course/delete/' + ${course.id}}">Delete</a>
+                        <a th:href="@{'/Student/delete/' + ${student.id}}">Delete</a>
                     </td>
                 </tr>
                 </tbody>
             </table>
+
         </div>
     </div>
 
@@ -51,7 +52,8 @@
     </tbody>
     </table>
     <div>
-
+    </div>
+</div>
 </body>
 <footer th:replace="common/footer :: footer"/>
 </html>
