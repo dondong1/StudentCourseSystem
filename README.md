@@ -5,7 +5,7 @@ Screenshots:
 
 # Testing API with Postman
 
-![Alt text](/6.png?raw=true "Course ")
+![Alt text](/5.png?raw=true "Course ")
 
 # Checking pages:
 
