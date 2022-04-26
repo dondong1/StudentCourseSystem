@@ -1,6 +1,6 @@
 # StudentCourseSystem
 
-Technologies: Html, css bootstrap, Thymeleaf, Java 17, SpringBoot, MySQL, JPA...
+Technologies: Html, css bootstrap, Thymeleaf, Java 17, SpringBoot, MySQL, JPA, Hibernate, Postman...
 Screenshots:
 
 # Testing API with Postman
